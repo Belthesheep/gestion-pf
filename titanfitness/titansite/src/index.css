@@ -1,6 +1,7 @@
 :root {
   background-color: #bababa;  /* Color de fondo para toda la pagina */
   height: 3000px;
+  box-sizing: border-box;
 }
 
 .frame {          /* Estilo para los cuadros de contenido */
@@ -36,13 +37,14 @@
 .header{           /* Estilo para el header */
   background-color: #284139;
   position: fixed;
+  left:0%;
   top: 0%;
   width: 100%;
   margin-bottom: 10px;
-  margin-top: 0px;
+
 }
 .header h1 {
-  color: white;
+  color: #f8d794;
   text-align: center;
   padding: 0px;
   font-size: 2rem;
@@ -52,7 +54,15 @@
   background-color: #284139;
   position: absolute;
   top: 3000px;
+  left:0%;
   width: 100%;
+}
+
+.footer p {
+  color: #f8d794;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
 }
 
 .body{          /* Estilo para el body */
