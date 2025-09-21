@@ -1,5 +1,5 @@
 :root {
-  background-color: #bababa;  /* Color de fondo para toda la pagina */
+  background-color: #f8d794;  /* Color de fondo para toda la pagina */
   height: 3000px;
   box-sizing: border-box;
 }
@@ -8,7 +8,7 @@
   max-width: 90%;
   margin: 60px auto;
   padding: 20px;
-  background-color: #f8d794;
+  background-color: #809076;
   border-radius: 20px;
   outline-style: solid;
   outline-width: 2px;
