@@ -1,9 +1,9 @@
 import React from "react";
-import "./About.css";
+import "../index.css";
 
 function About() {
   return (
-    <section className="about">
+    <section className="frame">
       <h2>Sobre Nosotros</h2>
       <p>
         En <strong>Titan Gym</strong> creemos que cada persona tiene el poder de
