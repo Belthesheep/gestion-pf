@@ -1,12 +1,22 @@
 :root {
   background-color: #f8d794;  /* Color de fondo para toda la pagina */
-  height: 3000px;
   box-sizing: border-box;
+}
+
+.bodystyle {
+  background-color: #f8d794;  /* Color de fondo para el body */
+  margin-top: 65px;
+  margin-bottom: 40px;
+  width: 100%;
+  box-sizing: content-box;
 }
 
 .frame {          /* Estilo para los cuadros de contenido */
   max-width: 90%;
-  margin: 60px auto;
+  margin:0px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 60px;
   padding: 20px;
   background-color: #809076;
   border-radius: 20px;
@@ -38,7 +48,7 @@
 .header{           /* Estilo para el header */
   background-color: #284139;
   position: fixed;
-  left:0%;
+  left: 0%;
   top: 0%;
   width: 100%;
   margin-bottom: 10px;
@@ -49,12 +59,13 @@
   text-align: center;
   padding: 0px;
   font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .footer{         /*estilo para el footer */
   background-color: #284139;
   position: absolute;
-  top: 3000px;
   left:0%;
   width: 100%;
 }
@@ -67,7 +78,7 @@
 }
 
 .body{          /* Estilo para el body */
-  margin-top: 150px ;
+  margin-top: 130px ;
   width: 100%;
   padding: 0;
   box-sizing: content-box;
@@ -106,9 +117,8 @@
 
 .galeria-motivacion {
   text-align: center;
-  background-color: #f8d794;
-  height: 300px;
   box-sizing: border-box;
+  margin-bottom: 40px;
 }
 
 .imagenes {
@@ -119,33 +129,29 @@
 .imagen-central {
   max-width: 90%;
   margin: 10px auto;
-  padding: 20px;
-  border-radius: 20px;
-  outline-style: solid;
-  outline-width: 2px;
-  outline-color: #bb6830;
   box-shadow: 5px 5px 20px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
 
 .imagen-central img {
   max-width: 100%;
-  height: auto;
+  height: 400px;
 }
 
 .frase {
   font-size: 3rem;
-  font-family: 'Bebas Neue', sans-serif; /* Fuente épica */
   font-weight: bold;
   text-align: center;
-  margin: 20px auto;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
   max-width: 80%;
   text-transform: uppercase; /* Opcional: para mayúsculas */
 }
 
 .autor {
   font-size: 1.5rem; /* Tamaño menor que la frase para diferenciar */
-  font-family: 'Bebas Neue', sans-serif; /* Mantiene la fuente épica */
   font-weight: bold;
   text-align: center;
   margin: 20px auto; /* Espaciado debajo de la frase */
@@ -153,13 +159,23 @@
 }
 
 button {
-  background: none;
-  border: none;
-  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.10);
+  border: solid 4px;
+  border-color: #000;
+  border-radius: 100%;
+  font-size: 4rem;
   cursor: pointer;
-  padding: 0 10px;
+  padding: 0 20px 0 20px;
 }
 
 button:hover {
   color: #bb6830;
+  background-color: rgba(255, 255, 255, 0.50);
+  box-shadow: 0 0 20px 5px #bb6830, 0 0 50px 20px #ffd6a0;
+  border-color: #bb6830;
+  transition: 
+    background-color 0.3s ease, 
+    color 0.3s ease, 
+    box-shadow 0.3s ease, 
+    border-color 0.3s ease;
 }

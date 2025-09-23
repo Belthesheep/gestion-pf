@@ -18,21 +18,20 @@ const GaleríaMotivacion = () => {
   };
 
   return (
-    <div className="galeria-motivacion">
-      <button onClick={prevImage}>&lt;</button> {/* Flecha izquierda */}
-      <div className="imagenes">
-        <div className="imagen-central">
-          <img src={images[currentImage].src} alt={images[currentImage].alt} />
+      <div className="galeria-motivacion">
+        <button onClick={prevImage}>&lt;</button> {/* Flecha izquierda */}
+        <div className="imagenes">
+          <div className="imagen-central">
+            <img src={images[currentImage].src} alt={images[currentImage].alt} />
+          </div>
+        </div>
+        <button onClick={nextImage}>&gt;</button> {/* Flecha derecha */}
+        <div className="frase">
+           “Ningún hombre es libre que no sea dueño de sí mismo.”
+           <p className="autor">
+            Epicteto</p>
         </div>
       </div>
-      <button onClick={nextImage}>&gt;</button> {/* Flecha derecha */}
-      <p className="frase">
-         “Ningún hombre es libre que no sea dueño de sí mismo."
-         <p className="autor">
-          Epicteto</p>
-                          
-      </p>
-    </div>
   );
 };
 

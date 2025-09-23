@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <header><Header /></header>
-      <body><Body /></body>
+      <Body />
       <footer><Footer /></footer>
     </>
   )

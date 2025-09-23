@@ -8,7 +8,7 @@ import "../index.css"
 const Body = () => {
   return (
 
-    <div className="body">
+    <div className="bodystyle">
         <GaleriaMotivacion />
         <About /> 
         <Cuadrodeprecios />
