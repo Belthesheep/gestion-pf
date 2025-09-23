@@ -11,7 +11,7 @@ const Body = () => {
     <div className="body">
         <GaleriaMotivacion />
         <About /> 
-        <Cuadrodepagos />
+        <Cuadrodeprecios />
     </div>
   )
 }
