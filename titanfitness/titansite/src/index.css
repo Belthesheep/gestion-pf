@@ -20,6 +20,7 @@
 
 .frame h2 {           /* Estilo para encabezados y titulos */
   font-size: 2.5rem;
+  margin-top: 15px;
   margin-bottom: 25px;
   color: #111a19;
   text-transform: uppercase;
@@ -71,6 +72,38 @@
   padding: 0;
   box-sizing: content-box;
 }
+
+.frame-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.frame-table td {
+  background-color: #cddcc4;
+  border-radius: 10px;
+  outline-color: #bb6830;
+  outline-width: 1px;
+  outline-style: solid;
+  padding: 10px;
+  font-size: 1.15rem;
+}
+
+.frame-table th {
+  font-size: 1.15rem;
+  color: white;
+  background-color: #284139;
+  border-radius: 10px;
+  border-radius: 10px;
+  outline-color: #bb6830;
+  outline-width: 1px;
+  outline-style: solid;
+  padding: 10px;
+  
+}
+
 .galeria-motivacion {
   text-align: center;
   background-color: #f8d794;

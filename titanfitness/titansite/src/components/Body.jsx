@@ -1,4 +1,4 @@
-import Cuadrodepagos from './Cuadrodepagos'
+import Cuadrodeprecios from './Cuadrodeprecios'
 import GaleriaMotivacion from './GaleriaMotivacion' 
 import About from './About'
 import "../index.css"
