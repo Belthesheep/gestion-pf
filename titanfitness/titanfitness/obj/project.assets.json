@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\sheep\\.nuget\\packages\\": {}
+    "C:\\Users\\Ulises\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sheep\\Escritorio\\Tareas\\Gestion de desarrollo de software\\proyecto-final\\titanfitness\\titanfitness\\titanfitness.csproj",
+      "projectUniqueName": "C:\\Users\\Ulises\\Desktop\\Proyecto\\gestion-pf\\titanfitness\\titanfitness\\titanfitness.csproj",
       "projectName": "titanfitness",
-      "projectPath": "C:\\Users\\sheep\\Escritorio\\Tareas\\Gestion de desarrollo de software\\proyecto-final\\titanfitness\\titanfitness\\titanfitness.csproj",
-      "packagesPath": "C:\\Users\\sheep\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sheep\\Escritorio\\Tareas\\Gestion de desarrollo de software\\proyecto-final\\titanfitness\\titanfitness\\obj\\",
+      "projectPath": "C:\\Users\\Ulises\\Desktop\\Proyecto\\gestion-pf\\titanfitness\\titanfitness\\titanfitness.csproj",
+      "packagesPath": "C:\\Users\\Ulises\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ulises\\Desktop\\Proyecto\\gestion-pf\\titanfitness\\titanfitness\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sheep\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Ulises\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

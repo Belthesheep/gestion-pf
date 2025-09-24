@@ -1,0 +1,38 @@
+
+
+.buttonbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #284139; 
+  padding: 10px;
+  border-radius: 50px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  margin: 20px auto; 
+}
+
+.bar-button {
+  color: #ecf0f1; 
+  background-color: transparent;
+  border: none;
+  padding: 12px 24px;
+  margin: 0 5px; 
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 50px; 
+}
+
+.bar-button:hover {
+  background-color: #34495e; 
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bar-button:active {
+  transform: translateY(0);
+  background-color: #1a242f; 
+}
