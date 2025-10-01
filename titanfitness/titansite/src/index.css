@@ -179,3 +179,87 @@ button:hover {
     box-shadow 0.3s ease, 
     border-color 0.3s ease;
 }
+
+/* Header general */
+.header-container {
+  background-color: #284139;
+  padding: 20px 0;
+  text-align: center;
+  color: #f8d794;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Título centrado */
+.project-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Barra de tareas */
+.taskbar {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background-color: transparent;
+}
+
+/* Grupo de botones centrado */
+.task-group {
+  display: flex;
+  gap: 20px;
+  
+}
+
+/* Botón de login alineado a la derecha */
+.login-button {
+  background-color: #284139;
+  color: #f8d794;
+  border: none;
+  padding: 10px 16px;
+   margin-left:5px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease-out, box-shadow 0.3s ease-out, transform 0.2s ease-out;
+}
+
+.login-button:hover {
+  background-color: #284139;
+  box-shadow: 0 0 4px #809076;
+  color: #f8d794;
+}
+
+.login-button:active {
+  background-color: #1e312b;
+  transform: scale(0.96);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+  
+}
+
+/* Botones de tareas */
+.task-button {
+  background-color: #284139;
+  color: #f8d794;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease-out, box-shadow 0.3s ease-out, transform 0.2s ease-out;
+  margin-right: 5px;
+}
+
+.task-button:hover {
+  background-color: #284139;
+  box-shadow: 0 0 4px #809076;
+  color: #f8d794;
+}
+
+.task-button:active {
+  background-color: #1e312b;
+  transform: scale(0.96);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
