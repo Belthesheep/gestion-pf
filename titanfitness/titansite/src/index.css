@@ -1,68 +1,265 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8d794;  /* Color de fondo para toda la pagina */
+  box-sizing: border-box;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.bodystyle {
+  background-color: #f8d794;  /* Color de fondo para el body */
+  margin-top: 65px;
+  margin-bottom: 40px;
+  width: 100%;
+  box-sizing: content-box;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.frame {          /* Estilo para los cuadros de contenido */
+  max-width: 90%;
+  margin:0px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 60px;
+  padding: 20px;
+  background-color: #809076;
+  border-radius: 20px;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #bb6830;
+  box-shadow: 5px 5px 20px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+
+.frame h2 {           /* Estilo para encabezados y titulos */
+  font-size: 2.5rem;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  color: #111a19;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.frame p {        /* Estilo para parrafos */
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #111a19;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.header{           /* Estilo para el header */
+  background-color: #284139;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+.header h1 {
+  color: #f8d794;
+  text-align: center;
+  padding: 0px;
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer{         /*estilo para el footer */
+  background-color: #284139;
+  position: absolute;
+  left:0%;
+  width: 100%;
+}
+
+.footer p {
+  color: #f8d794;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.body{          /* Estilo para el body */
+  margin-top: 130px ;
+  width: 100%;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.frame-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.frame-table td {
+  background-color: #cddcc4;
+  border-radius: 10px;
+  outline-color: #bb6830;
+  outline-width: 1px;
+  outline-style: solid;
+  padding: 10px;
+  font-size: 1.15rem;
+}
+
+.frame-table th {
+  font-size: 1.15rem;
+  color: white;
+  background-color: #284139;
+  border-radius: 10px;
+  border-radius: 10px;
+  outline-color: #bb6830;
+  outline-width: 1px;
+  outline-style: solid;
+  padding: 10px;
+  
+}
+
+.galeria-motivacion {
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+.imagenes {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.imagen-central {
+  max-width: 90%;
+  margin: 10px auto;
+  box-shadow: 5px 5px 20px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.imagen-central img {
+  max-width: 100%;
+  height: 400px;
+}
+
+.frase {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  max-width: 80%;
+  text-transform: uppercase; /* Opcional: para mayúsculas */
+}
+
+.autor {
+  font-size: 1.5rem; /* Tamaño menor que la frase para diferenciar */
+  font-weight: bold;
+  text-align: center;
+  margin: 20px auto; /* Espaciado debajo de la frase */
+  text-transform: uppercase; /* Opcional: para consistencia */
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: rgba(255, 255, 255, 0.10);
+  border: solid 4px;
+  border-color: #000;
+  border-radius: 100%;
+  font-size: 4rem;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  padding: 0 20px 0 20px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button:hover {
+  color: #bb6830;
+  background-color: rgba(255, 255, 255, 0.50);
+  box-shadow: 0 0 20px 5px #bb6830, 0 0 50px 20px #ffd6a0;
+  border-color: #bb6830;
+  transition: 
+    background-color 0.3s ease, 
+    color 0.3s ease, 
+    box-shadow 0.3s ease, 
+    border-color 0.3s ease;
+}
+
+/* Header general */
+.header-container {
+  background-color: #284139;
+  padding: 20px 0;
+  text-align: center;
+  color: #f8d794;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Título centrado */
+.project-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Barra de tareas */
+.taskbar {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background-color: transparent;
+}
+
+/* Grupo de botones centrado */
+.task-group {
+  display: flex;
+  gap: 20px;
+  
+}
+
+/* Botón de login alineado a la derecha */
+.login-button {
+  background-color: #284139;
+  color: #f8d794;
+  border: none;
+  padding: 10px 16px;
+   margin-left:5px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease-out, box-shadow 0.3s ease-out, transform 0.2s ease-out;
+}
+
+.login-button:hover {
+  background-color: #284139;
+  box-shadow: 0 0 4px #809076;
+  color: #f8d794;
+}
+
+.login-button:active {
+  background-color: #1e312b;
+  transform: scale(0.96);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+  
+}
+
+/* Botones de tareas */
+.task-button {
+  background-color: #284139;
+  color: #f8d794;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease-out, box-shadow 0.3s ease-out, transform 0.2s ease-out;
+  margin-right: 5px;
+}
+
+.task-button:hover {
+  background-color: #284139;
+  box-shadow: 0 0 4px #809076;
+  color: #f8d794;
+}
+
+.task-button:active {
+  background-color: #1e312b;
+  transform: scale(0.96);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
 }
