@@ -1,20 +1,15 @@
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Body from './components/Body'
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Body from './components/Body';
 
 function App() {
   return (
-<<<<<<< HEAD
-  <div>
-  </div>
-=======
     <>
-      <header><Header /></header>
+      <Header />
       <Body />
-      <footer><Footer /></footer>
+      <Footer />
     </>
->>>>>>> baee7ac8518cef792626a7f2af210144c3f10560
-  )
+  );
 }
 
-export default App
+export default App;
