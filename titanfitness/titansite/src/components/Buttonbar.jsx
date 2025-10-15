@@ -24,6 +24,7 @@ const Buttonbar = ({onReportClick}) => {
           className="login-button" 
           onClick={() => setShowLogin(true)}
         >
+          Iniciar Sesión
         </button>
 
         {/* Botón para abrir el modal de Registro */}
@@ -31,6 +32,7 @@ const Buttonbar = ({onReportClick}) => {
           className="login-button" 
           onClick={() => setShowRegister(true)}
         >
+          Crear Cuenta
         </button>
       </div>
 
