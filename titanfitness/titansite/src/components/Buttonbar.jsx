@@ -12,8 +12,8 @@ const Buttonbar = () => {
             </div>
 
             <div className="login-group">
-                <button className="login-button">Login</button>
-                <button className="login-button">Create</button>
+                <button className="login-button">Iniciar</button>
+                <button className="login-button">Crear cuenta</button>
             </div>
         </nav>
   )

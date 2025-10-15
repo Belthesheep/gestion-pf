@@ -45,8 +45,8 @@
   margin-bottom: 0px;
 }
 
-.header{           /* Estilo para el header */
-  background-color: #284139;
+.header{           /* Estilo para el header */ 
+ background-color: #284139;
   position: fixed;
   left: 0%;
   top: 0%;
