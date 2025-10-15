@@ -1,4 +1,4 @@
-import AdminNotifications from './components/AdminNotifications';
+import AdminNotifications from './AdminNotifications';
 import "../index.css"
 import Buttonbar from "./Buttonbar"
 const Header = () => {
