@@ -1,36 +1,8 @@
-feature/trainer-report
-import Header from './Header'
-
-const Buttonbar = ({onReportClick}) => {
-  return (
-        <nav className="taskbar">
-            <div>
-                <button className="task-button"> Menu</button>
-                <button className="task-button"> Nosotros</button>
-                <button className="task-button"> Membresias</button>
-                <button className="task-button"> Contactos</button>
-                <button className="task-button" 
-                    onClick={() => {console.log("Botón Reportar clickeado"); 
-                    onReportClick();}}>
-                        Reportar
-                    </button>
-            </div>
-
-            <div className="login-group">
-                <button className="login-button">Login</button>
-                <button className="login-button">Create</button>
-            </div>
-        </nav>
-  )
-}
-
-export default Buttonbar
-
 import React, { useState } from 'react';
 import LoginModal from './LoginModal';
 import RegisterModal from './RegisterModal';
 
-const Buttonbar = () => {
+const Buttonbar = ({onReportClick}) => {
   const [showLogin, setShowLogin] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
 
@@ -41,7 +13,9 @@ const Buttonbar = () => {
         <button className="task-button">Nosotros</button>
         <button className="task-button">Membresias</button>
         <button className="task-button">Contactos</button>
-        <button className="task-button">Reportes</button>
+        <button className="task-button" onClick={onReportClick}>
+          Reportar
+        </button>
       </div>
 
       <div className="login-group">
@@ -50,7 +24,6 @@ const Buttonbar = () => {
           className="login-button" 
           onClick={() => setShowLogin(true)}
         >
-          Login
         </button>
 
         {/* Botón para abrir el modal de Registro */}
@@ -58,7 +31,6 @@ const Buttonbar = () => {
           className="login-button" 
           onClick={() => setShowRegister(true)}
         >
-          Create
         </button>
       </div>
 
@@ -70,7 +42,6 @@ const Buttonbar = () => {
 };
 
 export default Buttonbar;
-main
 
 
      
