@@ -1,0 +1,104 @@
+/* Fondo oscuro que cubre toda la pantalla */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(27, 27, 27, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+/* Ventana del modal */
+.modal-container {
+  background-color: #2e473b;
+  color: #e9c97a;
+  border: 2px solid #cbb26a;
+  border-radius: 20px;
+  width: 420px;
+  padding: 2rem;
+  font-family: "Georgia", serif;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 0.3s ease;
+}
+
+/* Título */
+.modal-container h2 {
+  color: #cbb26a;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.modal-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+  background-color: #e9c97a;
+  color: #1b1b1b;
+  font-size: 16px;
+}
+
+.modal-container input:focus {
+  outline: 2px solid #cbb26a;
+}
+
+/* Botones */
+.btn-primary {
+  display: block;
+  margin: 15px auto;
+  background-color: #e8c170;
+  color: #1f3b33;
+  font-weight: 600;
+  font-size: 1rem;       /* 👈 Tamaño de letra más chico */
+  padding: 8px 20px;     /* 👈 Reduce el alto y ancho */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 40%;            /* 👈 Más angosto */
+  max-width: 180px;      /* 👈 Evita que crezca demasiado */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d4a84f;
+  transform: scale(1.05);
+}
+
+
+
+
+
+.btn-close {
+  display: block;
+  margin: 10px auto;
+  background: none;
+  border: none;
+  color: #f3dba6;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+
+
+.btn-close:hover {
+  text-decoration: underline;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
