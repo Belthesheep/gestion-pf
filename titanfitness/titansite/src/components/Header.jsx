@@ -1,10 +1,12 @@
 import "../index.css"
 import Buttonbar from "./Buttonbar"
-const Header = () => {
+
+
+const Header = ({ onReportClick }) => {
   return (
     <div className="header">
         <h1>Titan Fitness</h1>
-        <Buttonbar />   
+        <Buttonbar onReportClick={onReportClick}  />  
     </div>
   )
 }

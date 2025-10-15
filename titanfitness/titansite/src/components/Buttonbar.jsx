@@ -1,6 +1,6 @@
-import React from 'react'
+import Header from './Header'
 
-const Buttonbar = () => {
+const Buttonbar = ({onReportClick}) => {
   return (
         <nav className="taskbar">
             <div>
@@ -8,7 +8,11 @@ const Buttonbar = () => {
                 <button className="task-button"> Nosotros</button>
                 <button className="task-button"> Membresias</button>
                 <button className="task-button"> Contactos</button>
-                <button className="task-button"> Reportes</button>
+                <button className="task-button" 
+                    onClick={() => {console.log("Botón Reportar clickeado"); 
+                    onReportClick();}}>
+                        Reportar
+                    </button>
             </div>
 
             <div className="login-group">
