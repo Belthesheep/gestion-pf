@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Report from './components/Report'
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Report from './components/Report';
 import Body from './components/Body';
 
 function App() {
   const [mostrarReporte, setMostrarReporte] = useState(false);
+  const [userType, setUserType] = useState(null); // null | 'user' | 'admin'
 
   const toggleReporte = () => {
-    console.log("toggleReporte ejecutado");
     setMostrarReporte(!mostrarReporte);
   };
 
@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <header><Header onReportClick={toggleReporte}/></header>
+      <header><Header onReportClick={toggleReporte} userType={userType} setUserType={setUserType} /></header>
       <Body />
       {mostrarReporte && <Report />}
       <footer><Footer /></footer>

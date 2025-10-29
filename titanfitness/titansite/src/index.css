@@ -118,6 +118,7 @@
 .galeria-motivacion {
   text-align: center;
   box-sizing: border-box;
+  margin-top: 100px;
   margin-bottom: 40px;
 }
 
@@ -266,7 +267,7 @@ button:hover {
 
 .notification-panel {
   position: fixed;
-  top: 80px;
+  top: 130px;
   right: 20px;
   width: 300px;
   background: #fff;

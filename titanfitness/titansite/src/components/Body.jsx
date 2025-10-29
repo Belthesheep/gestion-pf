@@ -5,15 +5,12 @@ import "../index.css"
 
 // En este componente se deben agregar los componentes que iran en el body
 
-const Body = () => {
+export default function Body() {
   return (
-
-    <div className="bodystyle">
-        <GaleriaMotivacion />
-        <About /> 
-        <Cuadrodeprecios />
+    <div className="body">
+      <div id="galeria"><GaleriaMotivacion /></div>
+      <div id="about"><About /></div>
+      <div id="precios"><Cuadrodeprecios /></div>
     </div>
-  )
+  );
 }
-
-export default Body
